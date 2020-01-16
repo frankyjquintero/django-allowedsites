@@ -1,0 +1,8 @@
+test:
+  script:
+    - "tox -p auto"
+  tags:
+    - python 3.5
+    - python 3.6
+    - python 3.7
+
