@@ -15,9 +15,11 @@ DATABASES = {
 }
 
 INSTALLED_APPS = (
+    'django.contrib.admin',
     'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.auth',
+    'django.contrib.messages',
 )
 
 SKIP_SOUTH_TESTS = True
@@ -43,3 +45,28 @@ SILENCED_SYSTEM_CHECKS = [
 ]
 
 USE_TZ = True
+
+MIDDLEWARE = [
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+]
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+                'ws4redis.context_processors.default',
+            ],
+            'loaders': (
+                'django.template.loaders.app_directories.Loader',
+            ),
+        },
+    },
+]
