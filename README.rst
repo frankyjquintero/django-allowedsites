@@ -1,11 +1,11 @@
-===================
-django-allowedsites
-===================
+============================
+django-dinamic-allowedsites
+============================
 
 Django 1.6+ library for setting your ``ALLOWED_HOSTS`` based on the domains in ``django.contrib.sites``
 
-.. image:: https://travis-ci.org/kezabelle/django-allowedsites.svg?branch=master
-  :target: https://travis-ci.org/kezabelle/django-allowedsites
+.. image:: https://travis-ci.org/github/frankyjquintero/django-allowedsites.svg?branch=master
+  :target: https://travis-ci.org/github/frankyjquintero/django-allowedsites
 
 Usage is something like the following, in your ``settings.py`` or equivalent::
 
@@ -42,7 +42,7 @@ Other uses?
 -----------
 
 It *may* work with `django-csp`_ (Content Security Policy headers), 
-`django-dcors`_ (Cross-Origin Resource Sharing headers) and others. I don't know.
+`django-cors-headers`_ Cross-Origin Resource Sharing (CORS) headers and others. I don't know.
 
 .. _django-csp: https://github.com/mozilla/django-csp
-.. _django-dcors: https://github.com/prasanthn/django-dcors
+.. _django-cors-headers: https://github.com/adamchainz/django-cors-headers

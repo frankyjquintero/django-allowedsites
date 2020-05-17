@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class ForceAllowedHostCheck(object):
     def process_request(self, request):
         request.get_host()
@@ -18,7 +19,8 @@ class Sites(object):
             defaults = ()
         self.defaults = frozenset(defaults)
 
-    def get_raw_sites(self):
+    @staticmethod
+    def get_raw_sites():
         from django.contrib.sites.models import Site
         return Site.objects.all().iterator()
 
