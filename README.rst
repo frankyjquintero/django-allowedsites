@@ -1,11 +1,11 @@
-============================
-django-dinamic-allowedsites
-============================
+=============================
+django-dynamic-allowedsites
+=============================
 
 Django 1.6+ library for setting your ``ALLOWED_HOSTS`` based on the domains in ``django.contrib.sites``
 
-.. image:: https://travis-ci.org/github/frankyjquintero/django-allowedsites.svg?branch=master
-  :target: https://travis-ci.org/github/frankyjquintero/django-allowedsites
+.. image:: https://travis-ci.org/frankyjquintero/django-allowedsites.svg?branch=master
+  :target: https://travis-ci.org/frankyjquintero/django-allowedsites
 
 Usage is something like the following, in your ``settings.py`` or equivalent::
 
